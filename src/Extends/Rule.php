@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Extends\Laravel;
+namespace Nerow\Tools\Extends;
 
-use Illuminate\Validation\Rule as ValidationRule;
+use Illuminate\Validation\Rule as Origin;
 use Illuminate\Validation\Rules\In;
 
-class Rule extends ValidationRule
+class Rule extends Origin
 {
     /**
      * Get an in constraint builder instance from a config array.

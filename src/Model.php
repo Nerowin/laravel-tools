@@ -1,17 +1,14 @@
 <?php
 
-namespace App\Models;
+namespace Nerow\Tools;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
-use App\Traits\HasLogs;
-use App\Traits\HasMedia;
-use App\Traits\HasPipeline;
 
 abstract class Model extends EloquentModel
 {
-    use HasFactory, HasLogs, HasMedia, HasPipeline;
+    use HasFactory;
 
     /**
      * Si l'on souhaite accèder à l'attribut via une méthode du même nom.

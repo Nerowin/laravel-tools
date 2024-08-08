@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Casts;
+namespace Nerow\Tools\Casts;
 
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Database\Eloquent\Model;
@@ -12,7 +12,9 @@ class Json implements CastsAttributes
      */
     public function get(Model $model, string $key, ?string $value, array $attributes): array
     {
-        return ! empty($value) ? json_decode($value, true) : [];
+        return ! empty($value)
+             ? json_decode($value, true)
+             : [];
     }
 
     /**

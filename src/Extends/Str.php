@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Extends\Laravel;
+namespace Nerow\Tools\Extends;
 
-use Illuminate\Support\Str as Helper;
+use Illuminate\Support\Str as Origin;
 
-class Str extends Helper
+class Str extends Origin
 {
     /**
      * Retourne la ligne au numéro demandé.

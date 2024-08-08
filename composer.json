@@ -1,10 +1,10 @@
 {
-    "name": "nerow/laravel-logs",
-    "description": "Simple log package for Laravel",
+    "name": "nerow/laravel-tools",
+    "description": "Usefull tools for my Laravel libraries",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Nerow\\Logs\\": "src/"
+            "Nerow\\Tools\\": "src/"
         }
     },
     "authors": [
@@ -13,36 +13,13 @@
             "email": "nerow.op@gmail.com"
         }
     ],
-    "require": {
-        "nerow/laravel-services": "dev-main"
-    },
-    
-    "scripts": {
-        "post-package-install": [
-            "@prepare"
-        ],
-        "post-package-update": [
-            "@prepare"
-        ],
-        "prepare": "@php artisan vendor:publish --provider=Nerow\\Logs\\Providers\\LogServiceProvider"
-    },
+    "require": {},
     "extra": {
         "laravel": {
             "providers": [
-                "Nerow\\Logs\\Providers\\LogServiceProvider"
-            ],
-            "aliases": {
-                "Nerow\\Services\\LogService": "Nerow\\Logs\\LogService",
-                "Nerow\\Traits\\HasLogs": "Nerow\\Logs\\Traits\\HasLogs",
-                "Nerow\\Traits\\ServiceLogger": "Nerow\\Logs\\Traits\\ServiceLogger",
-                "Nerow\\Models\\Log": "Nerow\\Logs\\Models\\Log"
-            }
+                "Nerow\\Tools\\Providers\\ToolProvider"
+            ]
         }
     },
-    "repositories": {
-        "laravel-services": {
-            "type": "vcs",
-            "url": "https://github.com/Nerowin/laravel-services.git"
-        }
-    }
+    "repositories": {}
 }

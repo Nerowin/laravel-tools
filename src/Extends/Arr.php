@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Extends\Laravel;
+namespace Nerow\Tools\Extends;
 
-use Illuminate\Support\Arr as Helper;
+use Illuminate\Support\Arr as Origin;
 
-class Arr extends Helper
+class Arr extends Origin
 {
     /**
      * Implode les keys d'un tableau multidimensionnel à n profondeur.

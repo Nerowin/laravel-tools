@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Traits;
+namespace Nerow\Tools\Traits;
 
-trait JsonResponse
+// AVAILABLE FOR API CONTROLLER
+
+trait JsonResponseTrait
 {
     /**
      * Retourne une réponse formatée.

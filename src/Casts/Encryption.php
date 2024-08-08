@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Casts;
+namespace Nerow\Tools\Casts;
 
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Database\Eloquent\Model;

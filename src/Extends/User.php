@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Extends\Laravel;
+namespace Nerow\Tools\Extends;
 
 use App\Models\Model;
 use Illuminate\Auth\Authenticatable;

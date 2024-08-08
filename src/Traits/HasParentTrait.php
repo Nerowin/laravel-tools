@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Traits;
+namespace Nerow\Tools\Traits;
 
-trait HasParent
+// AVAILABLE FOR MODELS
+
+trait HasParentTrait
 {
 
     /*
